@@ -2,7 +2,7 @@
  * @author Fentury Team
  * Copyright (c) 2016 Salt Edge. All rights reserved.
  */
-package com.fentury.common.pinpadview
+package com.fentury.common.numpadview
 
 import android.annotation.SuppressLint
 import android.content.Context

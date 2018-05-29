@@ -2,7 +2,7 @@
  * @author Fentury Team
  * Copyright (c) 2018 Salt Edge. All rights reserved.
  */
-package com.fentury.common.pinpadview
+package com.fentury.common.numpadview
 
 import android.content.Context
 import android.util.AttributeSet
