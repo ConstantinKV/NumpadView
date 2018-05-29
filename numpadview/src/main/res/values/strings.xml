@@ -1,0 +1,24 @@
+<resources>
+    <string name="bullet" class="text" translatable="false">&#9679;</string>
+    <string name="one" class="text" translatable="false">1</string>
+    <string name="two" class="text" translatable="false">2</string>
+    <string name="three" class="text" translatable="false">3</string>
+    <string name="four" class="text" translatable="false">4</string>
+    <string name="five" class="text" translatable="false">5</string>
+    <string name="six" class="text" translatable="false">6</string>
+    <string name="seven" class="text" translatable="false">7</string>
+    <string name="eight" class="text" translatable="false">8</string>
+    <string name="nine" class="text" translatable="false">9</string>
+    <string name="zero" class="text" translatable="false">0</string>
+    <string name="delete_sign" class="text" translatable="false">\u232B</string>
+    <string name="plus_sign" class="text" translatable="false">+</string>
+    <string name="minus_sign" class="text" translatable="false">-</string>
+    <string name="multiply_sign" class="text" translatable="false">\u00D7</string>
+    <string name="division_sign" class="text" translatable="false">\u00F7</string>
+    <string name="percent_sign" class="text" translatable="false">%</string>
+    <string name="equal_sign" class="text" translatable="false">=</string>
+    <string name="dot_sign" class="text" translatable="false">.</string>
+    <string name="clear_sign" class="text" translatable="false">C</string>
+
+    <string name="use_fingerprint" class="text">Use fingerprint</string>
+</resources>

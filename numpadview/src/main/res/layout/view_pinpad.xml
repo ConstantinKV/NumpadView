@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pinpadLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/violet_extra_dark_1">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/hLine_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/hLine_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/hLine_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vLine_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vLine_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.67" />
+
+    <!--first row-->
+    <com.fentury.android.common.widget.numpad.NumpadKeyView
+        android:id="@+id/oneView"
+        style="@style/pinpad_light_button_with_divider"
+        android:text="@string/one"
+        app:layout_constraintBottom_toTopOf="@id/hLine_1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/vLine_1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.fentury.android.common.widget.numpad.NumpadKeyView
+        android:id="@+id/twoView"
+        style="@style/pinpad_light_button_with_divider"
+        android:text="@string/two"
+        app:layout_constraintBottom_toTopOf="@id/hLine_1"
+        app:layout_constraintLeft_toLeftOf="@id/vLine_1"
+        app:layout_constraintRight_toRightOf="@id/vLine_2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.fentury.android.common.widget.numpad.NumpadKeyView
+        android:id="@+id/threeView"
+        style="@style/pinpad_light_button_with_divider"
+        android:text="@string/three"
+        app:layout_constraintBottom_toTopOf="@id/hLine_1"
+        app:layout_constraintLeft_toLeftOf="@id/vLine_2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--second row-->
+    <com.fentury.android.common.widget.numpad.NumpadKeyView
+        android:id="@+id/fourView"
+        style="@style/pinpad_light_button_with_divider"
+        android:text="@string/four"
+        app:layout_constraintBottom_toTopOf="@id/hLine_2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/vLine_1"
+        app:layout_constraintTop_toTopOf="@id/hLine_1" />
+
+    <com.fentury.android.common.widget.numpad.NumpadKeyView
+        android:id="@+id/fiveView"
+        style="@style/pinpad_light_button_with_divider"
+        android:text="@string/five"
+        app:layout_constraintBottom_toTopOf="@id/hLine_2"
+        app:layout_constraintLeft_toLeftOf="@id/vLine_1"
+        app:layout_constraintRight_toRightOf="@id/vLine_2"
+        app:layout_constraintTop_toTopOf="@id/hLine_1" />
+
+    <com.fentury.android.common.widget.numpad.NumpadKeyView
+        android:id="@+id/sixView"
+        style="@style/pinpad_light_button_with_divider"
+        android:text="@string/six"
+        app:layout_constraintBottom_toTopOf="@id/hLine_2"
+        app:layout_constraintLeft_toLeftOf="@id/vLine_2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/hLine_1" />
+
+    <!--third row-->
+    <com.fentury.android.common.widget.numpad.NumpadKeyView
+        android:id="@+id/sevenView"
+        style="@style/pinpad_light_button_with_divider"
+        android:text="@string/seven"
+        app:layout_constraintBottom_toTopOf="@id/hLine_3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/vLine_1"
+        app:layout_constraintTop_toTopOf="@id/hLine_2" />
+
+    <com.fentury.android.common.widget.numpad.NumpadKeyView
+        android:id="@+id/eightView"
+        style="@style/pinpad_light_button_with_divider"
+        android:text="@string/eight"
+        app:layout_constraintBottom_toTopOf="@id/hLine_3"
+        app:layout_constraintLeft_toLeftOf="@id/vLine_1"
+        app:layout_constraintRight_toRightOf="@id/vLine_2"
+        app:layout_constraintTop_toTopOf="@id/hLine_2" />
+
+    <com.fentury.android.common.widget.numpad.NumpadKeyView
+        android:id="@+id/nineView"
+        style="@style/pinpad_light_button_with_divider"
+        android:text="@string/nine"
+        app:layout_constraintBottom_toTopOf="@id/hLine_3"
+        app:layout_constraintLeft_toLeftOf="@id/vLine_2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/hLine_2" />
+
+    <!--fourth row-->
+    <FrameLayout
+        android:id="@+id/fingerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/selector_keypad_light_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/vLine_1"
+        app:layout_constraintTop_toTopOf="@id/hLine_3">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_36"
+            android:layout_height="@dimen/dimen_36"
+            android:layout_gravity="center"
+            android:contentDescription="@string/use_fingerprint"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_action_fingerprint" />
+    </FrameLayout>
+
+    <com.fentury.android.common.widget.numpad.NumpadKeyView
+        android:id="@+id/zeroView"
+        style="@style/pinpad_light_button"
+        android:text="@string/zero"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/vLine_1"
+        app:layout_constraintRight_toRightOf="@id/vLine_2"
+        app:layout_constraintTop_toTopOf="@id/hLine_3" />
+
+    <com.fentury.android.common.widget.numpad.NumpadKeyView
+        android:id="@+id/deleteView"
+        style="@style/pinpad_light_button"
+        android:text="@string/delete_sign"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/vLine_2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/hLine_3" />
+
+    <View
+        style="@style/numpad_vertical_divider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/vLine_1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        style="@style/numpad_vertical_divider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/vLine_2"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

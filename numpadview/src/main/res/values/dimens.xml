@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_12">12dp</dimen>
+    <dimen name="dimen_36">36dp</dimen>
+    <dimen name="text_24">24sp</dimen>
+    <dimen name="divider_thickness">1dp</dimen>
+</resources>
