@@ -25,8 +25,8 @@ class PinpadView(context: Context, attrs: AttributeSet) : LinearLayout(context, 
         if (!isEnabled) return
         val viewId = view?.id ?: return
         when (viewId) {
-            R.id.fingerView -> clickListener?.onKeyClick(PinpadView.Control.FINGER)
-            R.id.deleteView -> clickListener?.onKeyClick(PinpadView.Control.DELETE)
+            R.id.fingerView -> clickListener?.onKeyClick(PinpadView.Control.FINGER, "")
+            R.id.deleteView -> clickListener?.onKeyClick(PinpadView.Control.DELETE, "")
             else -> {
                 val text: String = (view as? NumpadKeyView)?.text ?: return
                 clickListener?.onKeyClick(Control.NUMBER, text)
@@ -38,11 +38,11 @@ class PinpadView(context: Context, attrs: AttributeSet) : LinearLayout(context, 
         fingerView?.visibility = if (active) View.VISIBLE else View.GONE
     }
 
-    interface PinpadKeyClickListener {
-        fun onKeyClick(type: Control, value: String = "")
-    }
-
     enum class Control {
         DELETE, FINGER, NUMBER
+    }
+
+    interface PinpadKeyClickListener {
+        fun onKeyClick(type: PinpadView.Control, value: String)
     }
 }
