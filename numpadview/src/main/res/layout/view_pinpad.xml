@@ -42,7 +42,7 @@
         app:layout_constraintGuide_percent="0.67" />
 
     <!--first row-->
-    <com.fentury.android.common.widget.numpad.NumpadKeyView
+    <com.fentury.common.numpadview.NumpadKeyView
         android:id="@+id/oneView"
         style="@style/pinpad_light_button_with_divider"
         android:text="@string/one"
@@ -51,7 +51,7 @@
         app:layout_constraintRight_toRightOf="@id/vLine_1"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.fentury.android.common.widget.numpad.NumpadKeyView
+    <com.fentury.common.numpadview.NumpadKeyView
         android:id="@+id/twoView"
         style="@style/pinpad_light_button_with_divider"
         android:text="@string/two"
@@ -60,7 +60,7 @@
         app:layout_constraintRight_toRightOf="@id/vLine_2"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.fentury.android.common.widget.numpad.NumpadKeyView
+    <com.fentury.common.numpadview.NumpadKeyView
         android:id="@+id/threeView"
         style="@style/pinpad_light_button_with_divider"
         android:text="@string/three"
@@ -70,7 +70,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <!--second row-->
-    <com.fentury.android.common.widget.numpad.NumpadKeyView
+    <com.fentury.common.numpadview.NumpadKeyView
         android:id="@+id/fourView"
         style="@style/pinpad_light_button_with_divider"
         android:text="@string/four"
@@ -79,7 +79,7 @@
         app:layout_constraintRight_toRightOf="@id/vLine_1"
         app:layout_constraintTop_toTopOf="@id/hLine_1" />
 
-    <com.fentury.android.common.widget.numpad.NumpadKeyView
+    <com.fentury.common.numpadview.NumpadKeyView
         android:id="@+id/fiveView"
         style="@style/pinpad_light_button_with_divider"
         android:text="@string/five"
@@ -88,7 +88,7 @@
         app:layout_constraintRight_toRightOf="@id/vLine_2"
         app:layout_constraintTop_toTopOf="@id/hLine_1" />
 
-    <com.fentury.android.common.widget.numpad.NumpadKeyView
+    <com.fentury.common.numpadview.NumpadKeyView
         android:id="@+id/sixView"
         style="@style/pinpad_light_button_with_divider"
         android:text="@string/six"
@@ -98,7 +98,7 @@
         app:layout_constraintTop_toTopOf="@id/hLine_1" />
 
     <!--third row-->
-    <com.fentury.android.common.widget.numpad.NumpadKeyView
+    <com.fentury.common.numpadview.NumpadKeyView
         android:id="@+id/sevenView"
         style="@style/pinpad_light_button_with_divider"
         android:text="@string/seven"
@@ -107,7 +107,7 @@
         app:layout_constraintRight_toRightOf="@id/vLine_1"
         app:layout_constraintTop_toTopOf="@id/hLine_2" />
 
-    <com.fentury.android.common.widget.numpad.NumpadKeyView
+    <com.fentury.common.numpadview.NumpadKeyView
         android:id="@+id/eightView"
         style="@style/pinpad_light_button_with_divider"
         android:text="@string/eight"
@@ -116,7 +116,7 @@
         app:layout_constraintRight_toRightOf="@id/vLine_2"
         app:layout_constraintTop_toTopOf="@id/hLine_2" />
 
-    <com.fentury.android.common.widget.numpad.NumpadKeyView
+    <com.fentury.common.numpadview.NumpadKeyView
         android:id="@+id/nineView"
         style="@style/pinpad_light_button_with_divider"
         android:text="@string/nine"
@@ -145,7 +145,7 @@
             android:src="@drawable/ic_action_fingerprint" />
     </FrameLayout>
 
-    <com.fentury.android.common.widget.numpad.NumpadKeyView
+    <com.fentury.common.numpadview.NumpadKeyView
         android:id="@+id/zeroView"
         style="@style/pinpad_light_button"
         android:text="@string/zero"
@@ -154,7 +154,7 @@
         app:layout_constraintRight_toRightOf="@id/vLine_2"
         app:layout_constraintTop_toTopOf="@id/hLine_3" />
 
-    <com.fentury.android.common.widget.numpad.NumpadKeyView
+    <com.fentury.common.numpadview.NumpadKeyView
         android:id="@+id/deleteView"
         style="@style/pinpad_light_button"
         android:text="@string/delete_sign"

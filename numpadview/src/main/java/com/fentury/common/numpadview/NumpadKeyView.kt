@@ -1,6 +1,6 @@
 /**
  * @author Fentury Team
- * Copyright (c) 2016 Salt Edge. All rights reserved.
+ * Copyright (c) 2018 Salt Edge. All rights reserved.
  */
 package com.fentury.common.numpadview
 
@@ -16,6 +16,7 @@ import kotlinx.android.synthetic.main.view_numpad_key.view.*
 class NumpadKeyView(context: Context, attrs: AttributeSet) : LinearLayout(context, attrs) {
 
     var text: String = ""
+        private set
 
     init {
         LayoutInflater.from(context).inflate(R.layout.view_numpad_key, this)
