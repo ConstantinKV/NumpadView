@@ -22,5 +22,6 @@ public class ExampleInstrumentedTest {
         Context appContext = InstrumentationRegistry.getTargetContext();
 
         assertEquals("com.fentury.common.numpadview.test", appContext.getPackageName());
+        assertEquals("Use fingerprint", appContext.getString(R.string.use_fingerprint));
     }
 }
