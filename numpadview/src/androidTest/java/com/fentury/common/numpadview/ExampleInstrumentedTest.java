@@ -23,5 +23,6 @@ public class ExampleInstrumentedTest {
 
         assertEquals("com.fentury.common.numpadview.test", appContext.getPackageName());
         assertEquals("Use fingerprint", appContext.getString(R.string.use_fingerprint));
+        assertEquals("C", appContext.getString(R.string.clear_sign));
     }
 }
