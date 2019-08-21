@@ -35,7 +35,9 @@ android:
     - sys-img-armeabi-v7a-google_apis-$ANDROID_API_LEVEL
     - sys-img-armeabi-v7a-android-$ANDROID_API_LEVEL # the fix!
   licenses:
-    - ".+"
+    - 'android-sdk-preview-license-.+'
+    - 'android-sdk-license-.+'
+    - 'google-gdk-license-.+'
 before_cache:
   - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
   - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
@@ -45,9 +47,11 @@ cache:
     - "$HOME/.gradle/caches/"
     - "$HOME/.gradle/wrapper/"
     - "$HOME/.android/build-cache"
+before_install:
+  - yes | sdkmanager "build-tools;"$ANDROID_BUILD_TOOLS_VERSION
 before_script:
   - echo no | android create avd --force -n test -t "android-"$ANDROID_API_LEVEL --abi $ANDROID_ABI --tag $ANDROID_TAG
   - QEMU_AUDIO_DRV=none emulator -avd test -no-skin -no-window &
   - android-wait-for-emulator
   - adb shell input keyevent 82 &
-script: "./gradlew --stacktrace connectedAndroidTest"
+script: ./gradlew --stacktrace connectedAndroidTest
