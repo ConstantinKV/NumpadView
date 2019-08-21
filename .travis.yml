@@ -35,14 +35,13 @@ android:
     - extra-google-m2repository
     - extra-android-m2repository
     - addon-google_apis-$ANDROID_API_LEVEL
-
+    # System images
     - sys-img-$ANDROID_ABI-google_apis-$ANDROID_EMULATOR_LEVEL
 #    - sys-img-x86-google_apis-28
-
-    licenses:
-      - android-sdk-preview-license-.+
-      - android-sdk-license-.+
-      - google-gdk-license-.+
+  licenses:
+    - android-sdk-preview-license-.+
+    - android-sdk-license-.+
+    - google-gdk-license-.+
 
 before_install:
   - export ANDROID_HOME=/Volumes/HDD/android-sdk
