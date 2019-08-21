@@ -1,9 +1,10 @@
+sudo: false
 language: android
 dist: trusty
 jdk: oraclejdk8
 env:
   global:
-    - ADB_INSTALL_TIMEOUT=20 # minutes
+    - ADB_INSTALL_TIMEOUT=30 # minutes
     - ANDROID_HOME=/usr/local/android-sdk
     - TOOLS=${ANDROID_HOME}/tools
     - ANDROID_API_LEVEL=23
@@ -56,4 +57,4 @@ before_script:
   - QEMU_AUDIO_DRV=none emulator -avd test -no-skin -no-window &
   - android-wait-for-emulator
   - adb shell input keyevent 82 &
-script: ./gradlew --stacktrace connectedAndroidTest
+script: travis_wait 20 ./gradlew --stacktrace connectedAndroidTest
